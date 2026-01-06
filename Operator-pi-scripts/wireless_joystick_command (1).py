@@ -34,7 +34,8 @@ def button_OFFhandler():
     
 # Setting up TCP server & socket object creation
 commander_client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-commander_client.connect(("10.42.0.1",5500)) 
+#Change this to your local Pi IP
+commander_client.connect(("X.X.X.X",5500)) 
 #  changing IP to be into EDUROAM
 
 #button interrupt set up
