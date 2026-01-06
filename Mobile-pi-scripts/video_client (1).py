@@ -20,7 +20,8 @@ picam2.start()
 
 #socket object creation
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(("10.42.0.200", 5000))  # IP of operator Pi
+#Make sure to change this to your operator PI IP
+client.connect(("X.X.X.X", 5000))  # IP of operator Pi
 
 while True:
     frame = picam2.capture_array() #caputuring a single camera frame from the pi camera2 object
